@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.educandoweb.course.entities.User;
 
-//avisa que é um recurso web
+
 @RestController 
 @RequestMapping(value = "/users")
 public class UserResource {
 	
-	//recurso que retorna resposta web
+	
 	@GetMapping
 	public ResponseEntity<User> findAll(){
 		User u = new User(1L, "Maria", "aiko@yahoo", "9999", "1234");
